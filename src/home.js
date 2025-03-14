@@ -1,4 +1,4 @@
-export default function loadHomePage() {
+export default function loadHome() {
     const headingElement = document.createElement("h1");
     headingElement.textContent = "The Gilded Spoon Restaurant";
 

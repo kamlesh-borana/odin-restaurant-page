@@ -1,4 +1,8 @@
-import loadHomePage from "./home";
 import "./styles.css";
+import loadHome from "./home";
+import loadMenu from "./menu";
+import loadContact from "./contact";
 
-loadHomePage();
+loadHome();
+loadMenu();
+loadContact();
