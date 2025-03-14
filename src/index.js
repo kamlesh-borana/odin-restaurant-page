@@ -1,3 +1,4 @@
+import loadHomePage from "./home";
 import "./styles.css";
 
-console.log("Odin Restaurant Page");
+loadHomePage();

@@ -1,3 +1,33 @@
 body {
-  background-color: rebeccapurple;
+  background-color: peachpuff;
+  text-align: center;
+  width: 66ch;
+  margin: 0 auto;
+}
+
+header {
+  margin: 30px 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+header nav button {
+  font-size: 18px;
+  padding: 4px 16px;
+}
+
+#content {
+  text-align: left;
+}
+
+#content img {
+  width: 100%;
+}
+
+#content p {
+  font-size: 18px;
 }
