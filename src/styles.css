@@ -31,3 +31,9 @@ header nav button {
 #content p {
   font-size: 18px;
 }
+
+#content .menu-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}

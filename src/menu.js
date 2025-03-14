@@ -78,9 +78,17 @@ export default function loadMenu() {
 
     const headingElement = document.createElement("h1");
     headingElement.textContent = "Our Menu";
-    contentDiv.appendChild(headingElement);
+
+    const imageElement = document.createElement("img");
+    imageElement.src = "https://images.unsplash.com/photo-1557499305-bd68d0ad468d?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+
+    contentDiv.append(headingElement, imageElement);
+
+    const menuContainerElement = document.createElement("div");
+    menuContainerElement.classList.add("menu-container");
 
     menu.forEach((m) => {
+        const menuCategoryContainerElement = document.createElement("div");
         const menuCategoryHeadingElement = document.createElement("h2");
         menuCategoryHeadingElement.textContent = m.category;
 
@@ -92,6 +100,9 @@ export default function loadMenu() {
             menuListElement.appendChild(menuListItemElement);
         });
 
-        contentDiv.append(menuCategoryHeadingElement, menuListElement);
+        menuCategoryContainerElement.append(menuCategoryHeadingElement, menuListElement);
+        menuContainerElement.append(menuCategoryContainerElement);
     });
+
+    contentDiv.append(menuContainerElement);
 }
