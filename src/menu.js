@@ -1,3 +1,5 @@
+import restaurantMenuImage from "./menu.jpg";
+
 const menu = [
     {
         category: "Appetizers",
@@ -80,7 +82,7 @@ export default function loadMenu() {
     headingElement.textContent = "Our Menu";
 
     const imageElement = document.createElement("img");
-    imageElement.src = "https://images.unsplash.com/photo-1557499305-bd68d0ad468d?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+    imageElement.src = restaurantMenuImage;
 
     contentDiv.append(headingElement, imageElement);
 

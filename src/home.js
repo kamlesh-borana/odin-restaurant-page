@@ -1,9 +1,11 @@
+import restaurantHomeImage from "./home.jpg";
+
 export default function loadHome() {
     const headingElement = document.createElement("h1");
     headingElement.textContent = "The Gilded Spoon Restaurant";
 
     const imageElement = document.createElement("img");
-    imageElement.src = "https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+    imageElement.src = restaurantHomeImage;
 
     const headlineElement = document.createElement("h2");
     headlineElement.textContent = 'Indulge Your Senses at "The Gilded Spoon"';
